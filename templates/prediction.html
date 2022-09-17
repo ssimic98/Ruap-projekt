@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+            <div class='cont'>
+            {% if data[1] > 0.50 %}
+            <h1>Dog</h1>
+            {%else%}
+            <h1> Cat </h1>
+            {%endif%}
+        </div>
+            
+            <img src="{{url_for('load_img')}}" alt='img'>
+            <a href="/" class='btn'>go back</a>
+
+        </center>
+        
+    </body>
+</html>
