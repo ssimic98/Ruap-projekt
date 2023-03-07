@@ -32,7 +32,7 @@ def man():
     return render_template('index.html')
 
 
-@app.route('/', methods=['POST'])
+@app.route('/home', methods=['POST'])
 def home():
     global COUNT
     img = request.files['image']
